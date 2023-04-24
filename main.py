@@ -15,7 +15,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.id == 1097972997861687326:
+    if message.channel.id == 1097685290228908072:
         if message.content.startswith('tchau'):
             await message.channel.send('Tchau!')
 
@@ -26,4 +26,4 @@ async def on_message(message):
         await message.channel.send("Apagando todas as mensagens do canal...")
         await message.channel.purge(limit=None)
 
-client.run('MTA5Nzk0OTI4MTg3NDM1ODMyNQ.GjbndI.vVAh4JnWuAIgbSy4UlmACajST_yqiP0DMVnVYs')
+client.run("token do bot")
