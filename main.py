@@ -1,4 +1,11 @@
 import discord
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+GCP_PROJECT_ID = os.getenv('GCP_PROJECT_ID')
+idCanal = os.getenv('idCanal')
 
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
@@ -15,7 +22,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.id == 1097685290228908072:
+    if message.channel.id == idCanal:
         if message.content.startswith('tchau'):
             await message.channel.send('Tchau!')
 
