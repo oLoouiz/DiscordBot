@@ -29,7 +29,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.id == 1097685290228908072:
+    if message.channel.id == #aqui ficaria o id do canal do Discord que vc quer que ele mande mnsg:
 
         # inicio bot ia identificador
 
